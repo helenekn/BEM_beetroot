@@ -20,6 +20,11 @@ body {
    margin: 0 auto;
 }
 
+.header {
+   background: #ffffff;
+   padding: 10px 0;
+}
+
 .header-flex {
    display: flex;
    justify-content: space-between;
@@ -79,12 +84,25 @@ body {
    max-width: 570px;
 }
 
+.top__title::after {
+   content: "";
+   display: block;
+   width: 45px;
+   height: 4px;
+   background: #dddbdb;
+   position: absolute;
+   bottom: -8px;
+   left: 50%;
+   transform: translateX(-50%);
+}
+
 .main-top {
    padding: 150px 0 60px;
    margin: 0 auto;
 }
 
 .top__title {
+   position: relative;
    min-width: 368px;
    margin-bottom: 40px;
    font-weight: 700;
